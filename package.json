@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "@midscene/web": "^0.21.2",
+    "@playwright/test": "^1.53.2",
+    "cross-env": "^7.0.3"
+  },
+  "scripts": {
+    "whale": "playwright test --config=playwright.config.ts",
+    "whale:cache": "cross-env MIDSCENE_CACHE=true playwright test --config=playwright.config.ts",
+    "whale:ui": "playwright test --config=playwright.config.ts --ui",
+    "whale:ui:cache": "cross-env MIDSCENE_CACHE=true playwright test --config=playwright.config.ts --ui",
+    "postinstall": "pnpm exec playwright install"
+  },
+  "dependencies": {
+    "dotenv": "^17.1.0"
+  }
+}
