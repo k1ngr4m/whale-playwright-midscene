@@ -11,7 +11,7 @@ dotenv.config();
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-    testDir: "./whale",
+    testDir: "./whale/alivia/stage",
     testMatch: "**/*.spec.ts",
     testIgnore: "**/00_authenticate.spec.ts",
     timeout: 10 * 60 * 1000,
