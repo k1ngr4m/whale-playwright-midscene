@@ -11,5 +11,5 @@ test('authenticate', async ({aiInput,aiTap,aiWaitFor,page}) =>{
     await aiTap('登录按钮');
     await aiWaitFor('等待界面初始化完成')
 
-    await page.context().storageState({ path: 'auth.json' });
+    await page.context().storageState({ path: './whale/ruxin/ruxin_auth.json' });
 })

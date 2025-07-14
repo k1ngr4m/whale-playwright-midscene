@@ -13,7 +13,7 @@ dotenv.config();
 export default defineConfig({
     testDir: "./whale",
     testMatch: "**/*.spec.ts",
-    testIgnore: "**/authenticate.spec.ts",
+    testIgnore: "**/00_authenticate.spec.ts",
     timeout: 10 * 60 * 1000,
     /* Run whale in files in parallel */
     fullyParallel: false,

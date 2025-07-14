@@ -1,5 +1,5 @@
 import {test} from "./fixture";
-test.use({ storageState: 'auth.json' });
+test.use({ storageState: './whale/ruxin/ruxin_auth.json' });
 
 test('Create a new folder', async ({ aiInput, aiTap, aiAssert, aiWaitFor, page}) => {
     await page.goto('https://precontentmanage.marketingforce.com/harbor/content/Private');
